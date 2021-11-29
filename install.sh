@@ -4,10 +4,6 @@ exec > >(tee -i $HOME/dotfiles_install.log)
 exec 2>&1
 set -x
 
-ln -s $(pwd)/tmux.conf $HOME/.tmux.conf
-ln -s $(pwd)/vimrc $HOME/.vimrc
-ln -s $(pwd)/vim $HOME/.vim
-ln -s $(pwd)/emacs $HOME/.emacs
-ln -s $(pwd)/screenrc $HOME/.screenrc
-
-vim -Es -u $HOME/.vimrc -c "PlugInstall | qa"
+ln -s $(pwd)/p10k.zsh $HOME/.p10k.zsh
+ln -s $(pwd)/zshrc $HOME/.zshrc
+ln -s $(pwd)/gitignore_global $HOME/.gitignore_global
