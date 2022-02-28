@@ -33,4 +33,4 @@ ln -s $(pwd)/p10k.zsh $HOME/.p10k.zsh
 ln -s $(pwd)/gitignore_global $HOME/.gitignore_global
 
 # Go Proxy setup for GH Go Modules
-echo "machine goproxy.githubapp.com login nobody password $BP_GITHUB_TOKEN" >> $HOME/.netrc
+echo "machine goproxy.githubapp.com login nobody password $GITHUB_TOKEN" >> $HOME/.netrc
