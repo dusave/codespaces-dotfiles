@@ -32,5 +32,8 @@ ln -s $(pwd)/zshrc $HOME/.zshrc
 ln -s $(pwd)/p10k.zsh $HOME/.p10k.zsh
 ln -s $(pwd)/gitignore_global $HOME/.gitignore_global
 
+# Setup auto tracking of branches
+git config --global --add --bool push.autoSetupRemote true
+
 # Go Proxy setup for GH Go Modules
 echo "machine goproxy.githubapp.com login nobody password $GITHUB_TOKEN" >> $HOME/.netrc
