@@ -37,8 +37,10 @@ alias ll='ls -la'
 
 # Git Aliases
 alias gb='git branch'
+alias gaa='git add -A'
 alias gc='git commit'
 alias gl='git pull'
+alias glm='git pull origin master'
 alias gp='git push'
 alias gcb='git checkout -b'
 alias gla='git lg --all'
